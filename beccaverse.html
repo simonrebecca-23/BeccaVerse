@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BeccaVerse</title>
+    <style>
+      p {
+      line-height: 1.6;
+    }
+      .main-title{
+        color: goldenrod;
+        font-family: Arial;
+        font-size: 50px;
+        background-color:rgb(248, 248, 179);
+       text-align: center;
+       letter-spacing: 2px;
+      }
+      .motto-bar{
+       text-align: center;
+       font-size: 20px;
+       color: darkgray;
+       font-weight: bold;
+      }
+      .section-title{
+        font-size: 32px;
+        text-align: center;
+        color: grey;
+      }
+      .about-text{
+        text-align: center;
+        font-size: 18px;
+        color: grey;
+        margin: 20px;
+
+      }
+      .service-card{
+        background-color: whitesmoke;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 20px auto;
+        color: goldenrod;
+        font-weight: bold;
+        font-family: Tahoma;
+        max-width: 500px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        border: 2px solid  #DAA520;
+        transition: 0.3s;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .service-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+      .service-instruct{
+       color: grey;
+      }
+      .service-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: stretch;
+        
+      }
+      @media (max-width: 600px){
+        .service-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    .service-card h3 {
+    color: #DAA520;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.service-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-info{
+  text-align: center;
+  font-size: 18px;
+  color:#555;
+  margin-top: 20px;
+  background-color:  #E8E8E8;
+  padding: 25px;
+  border-radius: 2px solid #DAA520;
+
+}
+.contact-info a {
+    color:  #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    color: #B8860B;
+}
+  .nav-bar{
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #333;
+    padding: 15px;
+    border-bottom: 3px solid;
+    border-color: #DAA520;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .nav-bar a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+    .nav-bar a:hover {
+    color: #DAA520;
+}
+    body{
+      background-color: #F2F2F2;
+      margin: 0;
+      padding: 20px;
+      font-family: Tahoma;
+    }
+    .hero{
+      padding: 60px 20px;
+      text-align: center;
+      background-color: lightgrey ; 
+      border-radius: 20px;
+      border: 2px solid;
+      border-color: gold;
+    }
+    .hero-button{
+      display: inline-block;
+      background-color: #DAA520;
+      color: #333;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      translate: 0.5s;
+    }
+    .hero-button:hover{
+      background-color: #B8860B;
+    color: #F2F2F2;
+    }
+    .section-button{
+      padding: 40px 20px;
+    }
+    .service-icon{
+      width: 60px;
+      object-fit: contain;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+   .services-section {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+}
+    </style>
+  </head>
+  <Body>
+    <nav class="nav-bar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#service">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+      <h1 id="home" class="main-title">Welcome to beccaVerse</h1>
+    <p class="motto-bar">Where ideas become digital.</p>
+    <a href="#services" class="hero-button">view my services</a>
+    </div>
+    <section class="section-button">
+     <h2 id="about" class="section-title"> About BeccaVerse</h2>
+    <p class="about-text">
+      BeccaVerse is a creative digital space where ideas,
+      technology and creativity come together.</p>
+    </section>
+      <section section-button>
+       <h2 id="service" class="section-title">
+        my service
+      </h2>
+      <div class="service-container">
+        
+           <div class="service-card">
+            <img src="icons/laptop.png" alt="laptop icon" class="service-icon">
+          <h3> Web Design</h3>
+          <p class="service-instruct">Creating beautiful and responsive website</p>
+        </div>
+       <div class="service-card">
+        <img src="icons/graphics.png" alt="graphics icon" class="service-icon">
+        <h3>Graphics Design</h3>
+        <p  class="service-instruct">Creating flyers, banners and creative designs.</p>
+       </div>
+       <div class="service-card">
+        <img src="icons/printing.png" alt="printing icon" class="service-icon">
+        <h3>Printing</h3>
+        <p  class="service-instruct">printing documents and other materials</p>
+       </div>
+       <div class="service-card">
+        <img src="icons/service.png" alt="service icon" class="service-icon">
+        <h3>online services</h3>
+        <p  class="service-instruct">Providing Helpfuldigital and online services
+          E.g online registraion, portal issue, e.t.c
+        </p>
+       </div>
+      </div>
+      </section>
+      
+      <section class="section-button">
+        <div class="contact-info">
+      <h2 id="contact" class="section-title">Contact Me</h2>
+      <p>Email: 
+        <a href="mailto:beccaverse720@gmail.com"> beccaverse720@gmail.com</a>
+        </p>
+      <p>phone: 
+      <a href="tel:07063795704">07063795704</a>  
+    </p>
+     <p> WhatsApp:
+      <a href="https://wa.me/2347063795704">chat with me on whatsApp</a> 
+    </p>
+     </div>
+      </section>
+     
+    <footer>
+      <p>&#169; 2026 BeccaVerse. All rights reserved.</p>
+    </footer>  
+     <a href="#home" class="back-to-top">↑ Back to Top</a>
+      
+      
+     
+      
+      
+  </Body>
+</html>
